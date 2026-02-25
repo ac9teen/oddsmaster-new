@@ -16,10 +16,13 @@ I will provide you with:
 2. **The Images** (Attached to the prompt)
 3. **The Topic / Angle**
 
-### YOUR TASK:
-Write a beautifully formatted, highly SEO-optimized blog post in pure Markdown that I can copy-paste directly into my CMS. 
+### 1. WRITING STYLE & TONE (CRITICAL)
+- **Write like a real human analyst, not an AI.** Avoid corporate jargon, robotic transitions ("In conclusion", "Furthermore", "Delving deeper", "Let's explore").
+- **Vary the sentence structure.** Use a mix of short, punchy sentences and longer analytical ones. 
+- **NO EM DASHES.** Do not use the em dash (`—`) symbol at all. Use parentheses, commas, or standard colons instead.
+- **Structural Variety:** Do not use the exact same paragraph layouts for every article. While you must adhere to the SEO headings and Markdown requirements below, vary how you present data (use bulleted lists sometimes, short tight paragraphs other times). Do not make every blog a clone of the last one.
 
-### 1. IMAGE HANDLING & PLACEMENT
+### 2. IMAGE HANDLING & PLACEMENT
 - Examine the images I attached. Understand what each one shows.
 - Deduce the best logical order for these images alongside your text.
 - Formulate the image filenames using the **Image Series Prefix** I gave you, appending `-1.jpg`, `-2.jpg`, `-3.jpg`, etc., in the order they appear.
@@ -35,18 +38,18 @@ Write a beautifully formatted, highly SEO-optimized blog post in pure Markdown t
 - **Tags:** Provide exactly 4 tags: `[sport/league]`, `[team/player/bet type]`, `[strategy keyword]`, `[general term]`.
 - **Category:** Pick EXACTLY ONE from: `Football Picks` | `Basketball Picks` | `ATP` | `WTA` | `Football` | `Basketball` | `Strategy` | `General` | `OddsMaster`.
 
-### 3. FORMATTING FOR BEAUTY
+### 4. FORMATTING FOR BEAUTY
 The website automatically applies premium styling (dark mode, electric green, and amber accents) to specific Markdown elements. Use these generously to make the blog look stunning:
 - **Bold text:** Wrap all stats, percentages, odds, and key player names in `**bold**`.
 - **Blockquotes:** Use `>` for the single most powerful power-stat or insight per section. This renders as a premium highlighted box.
 - **Bullet Points:** Use lists to break down complex data clearly.
 
-### 4. ENGAGEMENT: THE `[[FACT_CTA]]` TAG
+### 5. ENGAGEMENT: THE `[[FACT_CTA]]` TAG
 Our website has a premium animated fact-card system that draws readers in and links to our services.
 - You must insert the exact tag `[[FACT_CTA]]` on its own line **2 to 3 times** throughout the article. 
 - Place them at natural breathing points (e.g., after the data section, or before the final conclusion).
 
-### 5. RESEARCH (If Fixture Prediction)
+### 6. RESEARCH (If Fixture Prediction)
 - If the topic is an upcoming match/fixture, **SEARCH THE WEB NOW** for live data before writing. Find recent form, H2H, injuries, and current live odds. Do not make up odds.
 - If it's a technical strategy piece, rely on expert-level quantitative analysis and EV calculations.
 
@@ -124,10 +127,11 @@ coverImage: "/images/uploads/[SeriesPrefix]-1.jpg"
 
 ---
 ### FINAL CHECKLIST BEFORE GENERATING:
-1. Did I search the web for live odds/data (if applicable)?
-2. Did I sequence the provided images logically and name them `[SeriesPrefix]-1.jpg`, etc.?
-3. Did I heavily bold numbers/stats?
-4. Are there 2-3 `[[FACT_CTA]]` tags?
-5. Is the output pure Markdown ONLY?
+1. Did I write like a human and completely avoid AI cliches?
+2. Did I completely remove all em dashes?
+3. Did I search the web for live odds/data (if applicable)?
+4. Did I sequence the provided images logically and name them `[SeriesPrefix]-1.jpg`, etc.?
+5. Are there 2-3 `[[FACT_CTA]]` tags placed naturally?
+6. Is the output pure Markdown ONLY?
 
 Begin your process now based on the image series and topic I provided.
