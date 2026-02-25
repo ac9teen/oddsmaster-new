@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { ArrowLeft, ArrowRight, Clock, Calendar, Share2, AlertTriangle } from 'lucide-react';
 import { PostBody } from '../../components/PostBody';
 import { ShareButton } from '../../components/ShareButton';
+import { ReadingProgress } from '../../components/ReadingProgress';
 import '../../blog.css'; // We will create this for specific typography styles
 
 export async function generateStaticParams() {
@@ -79,6 +80,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
             <Header />
+            <ReadingProgress />
 
             <main className="pt-32 pb-24">
                 <article>
