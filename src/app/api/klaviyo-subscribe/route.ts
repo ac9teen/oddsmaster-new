@@ -31,7 +31,7 @@ export async function POST(request: Request) {
 
     const headers: HeadersInit = {
         'Authorization': `Klaviyo-API-Key ${KLAVIYO_API_KEY}`,
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/vnd.api+json',
         'revision': KLAVIYO_REVISION,
     };
 
