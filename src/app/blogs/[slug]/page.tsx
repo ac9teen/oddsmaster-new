@@ -85,7 +85,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             <main className="pt-32 pb-24">
                 <article>
                     {/* Post Header */}
-                    <header className="om-container px-6 mb-16 text-center max-w-4xl mx-auto">
+                    <header className="om-container px-4 md:px-6 mb-12 md:mb-16 text-center max-w-4xl mx-auto">
                         <Link href="/blogs" className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-muted hover:text-accent transition-colors mb-12">
                             <ArrowLeft className="w-4 h-4" /> Back to Intelligence
                         </Link>
@@ -122,8 +122,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
                     {/* Featured Image */}
                     {post.coverImage && (
-                        <div className="om-container px-6 mb-16">
-                            <div className="relative aspect-[21/9] w-full max-w-5xl mx-auto rounded-[2rem] overflow-hidden border border-card-border shadow-2xl">
+                        <div className="om-container px-4 md:px-6 mb-10 md:mb-16">
+                            <div className="relative aspect-video w-full max-w-5xl mx-auto rounded-2xl md:rounded-[2rem] overflow-hidden border border-card-border shadow-2xl">
                                 <img
                                     src={post.coverImage}
                                     alt={post.title}
@@ -135,18 +135,18 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                     )}
 
                     {/* Content Body */}
-                    <div className="om-container px-6 mb-20">
+                    <div className="om-container px-4 md:px-6 mb-16 md:mb-20">
                         <PostBody content={content} />
                     </div>
 
                     {/* Share / Tags Footer */}
-                    <div className="om-container px-6 mb-24 max-w-4xl mx-auto border-t border-card-border pt-12 flex justify-between items-center">
+                    <div className="om-container px-4 md:px-6 mb-20 md:mb-24 max-w-4xl mx-auto border-t border-card-border pt-12 flex flex-col md:flex-row gap-6 justify-between items-center">
                         <div className="text-sm font-bold text-muted">
                             Tagged: <span className="text-foreground">{post.tags?.join(', ')}</span>
                         </div>
                         <ShareButton title={post.title} />
                     </div>
-                    <div className="om-container px-6 mb-24 max-w-4xl mx-auto">
+                    <div className="om-container px-4 md:px-6 mb-24 max-w-4xl mx-auto">
                         <div className="bg-[#f7d849]/10 border border-[#f7d849]/20 rounded-2xl p-6 md:p-8 relative overflow-hidden">
                             <div className="flex flex-col md:flex-row gap-6 items-start md:items-center relative z-10">
                                 <div className="w-12 h-12 rounded-full bg-[#f7d849] flex items-center justify-center shrink-0">

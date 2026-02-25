@@ -14,7 +14,7 @@ export function PostBody({ content }: PostBodyProps) {
     if (content.includes('[[FACT_CTA]]')) {
         const parts = content.split('[[FACT_CTA]]');
         return (
-            <div className="prose prose-invert prose-lg max-w-4xl mx-auto blog-content w-full px-4 md:px-0">
+            <div className="prose prose-invert prose-lg max-w-4xl mx-auto blog-content w-full">
                 {parts.map((part, index) => (
                     <React.Fragment key={index}>
                         <div dangerouslySetInnerHTML={{ __html: part }} />
@@ -27,7 +27,7 @@ export function PostBody({ content }: PostBodyProps) {
 
     return (
         <div
-            className="prose prose-invert prose-lg max-w-4xl mx-auto blog-content w-full px-4 md:px-0"
+            className="prose prose-invert prose-lg max-w-4xl mx-auto blog-content w-full"
             dangerouslySetInnerHTML={{ __html: content }}
         />
     );
