@@ -51,7 +51,7 @@ In efficient ATP markets, sustained edges above **5%** are rare. This qualifies.
 
 Straight-sets projection sits near **61–63%**, while market pricing implies roughly **55%**. There is secondary value in the 2-0 outcome.
 
-![Projected Win Probability Model](/images/uploads/250226a-2.jpg)
+![Projected Win Probability Model](/images/uploads/250225-a2.jpg)
 *Model projection shows Ruud with clear win probability advantage.*
 
 [[FACT_CTA]]
@@ -82,7 +82,7 @@ Three variables could introduce volatility:
 
 If Ruud’s serve efficiency dips, variance expands quickly.
 
-![Casper Ruud Performance Profile](/images/uploads/250226a-3.jpg)
+![Casper Ruud Performance Profile](/images/uploads/250226-a3.jpg)
 *Ruud career snapshot: ATP No. 12, 14 titles, strong hard-court baseline metrics.*
 
 ---

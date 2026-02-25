@@ -5,6 +5,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, Clock, Calendar, Share2, AlertTriangle } from 'lucide-react';
 import { PostBody } from '../../components/PostBody';
+import { ShareButton } from '../../components/ShareButton';
 import '../../blog.css'; // We will create this for specific typography styles
 
 export async function generateStaticParams() {
@@ -137,15 +138,13 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                     </div>
 
                     {/* Share / Tags Footer */}
-                    <div className="om-container px-6 mb-24 max-w-3xl mx-auto border-t border-card-border pt-12 flex justify-between items-center">
+                    <div className="om-container px-6 mb-24 max-w-4xl mx-auto border-t border-card-border pt-12 flex justify-between items-center">
                         <div className="text-sm font-bold text-muted">
                             Tagged: <span className="text-foreground">{post.tags?.join(', ')}</span>
                         </div>
-                        <button className="flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-accent hover:bg-accent/10 px-4 py-2 rounded-full transition-colors">
-                            <Share2 className="w-4 h-4" /> Share Analysis
-                        </button>
+                        <ShareButton title={post.title} />
                     </div>
-                    <div className="om-container px-6 mb-24 max-w-3xl mx-auto">
+                    <div className="om-container px-6 mb-24 max-w-4xl mx-auto">
                         <div className="bg-[#f7d849]/10 border border-[#f7d849]/20 rounded-2xl p-6 md:p-8 relative overflow-hidden">
                             <div className="flex flex-col md:flex-row gap-6 items-start md:items-center relative z-10">
                                 <div className="w-12 h-12 rounded-full bg-[#f7d849] flex items-center justify-center shrink-0">
