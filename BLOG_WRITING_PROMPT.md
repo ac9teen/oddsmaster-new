@@ -55,21 +55,22 @@ Our website has a premium animated fact-card system that draws readers in and li
 
 ---
 
-### REQUIRED MARKDOWN OUTPUT FORMAT
+### REQUIRED OUTPUT FORMAT
 
-Do not include any chatty wrapper text. Output ONLY the raw Markdown starting with the `---`.
+Do not include any chatty wrapper text. Output in this exact structure so my intern can easily copy-paste each field into the CMS UI:
 
-~~~markdown
 ---
-layout: "blog"
-title: "[Sharp, Clickable SEO Title]"
-date: "[Today's Date YYYY-MM-DD]"
-category: "[Exact Category Name]"
-excerpt: "[160-character SEO meta description with a hook]"
-author: "OddsMaster Quant Team"
-tags: ["[Tag 1]", "[Tag 2]", "[Tag 3]", "[Tag 4]"]
-coverImage: "/images/uploads/[SeriesPrefix]-1.jpg"
+
+### CMS FIELDS:
+**TITLE:** [Sharp, Clickable SEO Title]
+**CATEGORY:** [Exact Category Name]
+**EXCERPT:** [160-character SEO meta description with a hook]
+**TAGS:** [Tag 1], [Tag 2], [Tag 3], [Tag 4]
+**FEATURED IMAGE:** /images/uploads/[SeriesPrefix]-1.jpg
+
 ---
+
+### MARKDOWN BODY:
 
 ## [Punchy Hook / Introduction]
 [3-4 sentences grabbing the reader's attention with a major insight or data point. Set the stage.]
@@ -122,8 +123,8 @@ coverImage: "/images/uploads/[SeriesPrefix]-1.jpg"
 [2-3 sentences max. Confident and direct. Forward-looking conclusion.]
 
 ---
+---
 *Disclaimer: This analysis is for informational purposes only. Please gamble responsibly.*
-~~~
 
 ---
 ### FINAL CHECKLIST BEFORE GENERATING:
