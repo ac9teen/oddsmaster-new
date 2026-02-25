@@ -19,8 +19,20 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       
-      # Select widget for Categories
-      - {label: "Category", name: "category", widget: "select", options: ["Strategy", "ATP", "WTA", "Football Picks", "Basketball Picks", "Football", "Basketball", "General", "OddsMaster"], default: "ATP"}
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        default: "General"
+        options:
+          - { label: "⚽ Football Picks", value: "Football Picks" }
+          - { label: "🏀 Basketball Picks", value: "Basketball Picks" }
+          - { label: "🎾 ATP (Men's Tennis)", value: "ATP" }
+          - { label: "🎾 WTA (Women's Tennis)", value: "WTA" }
+          - { label: "🏈 NFL / American Football", value: "Football" }
+          - { label: "🏀 Basketball (General)", value: "Basketball" }
+          - { label: "📊 Betting Strategy", value: "Strategy" }
+          - { label: "🌐 General", value: "General" }
+          - { label: "🏆 OddsMaster", value: "OddsMaster" }
       
       - {label: "Featured Image", name: "coverImage", widget: "image"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
