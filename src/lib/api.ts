@@ -48,7 +48,13 @@ export function getPostBySlug(slug: string, fields: string[] = []): Post {
             items[field] = content;
         }
         if (typeof data[field] !== 'undefined') {
-            items[field] = data[field];
+            // Gray-matter sometimes parses unquoted dates into Date objects. 
+            // Convert them to ISO strings right away to prevent React rendering errors.
+            if (data[field] instanceof Date) {
+                items[field] = data[field].toISOString().split('T')[0];
+            } else {
+                items[field] = data[field];
+            }
         }
     });
 
