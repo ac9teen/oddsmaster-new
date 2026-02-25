@@ -33,6 +33,34 @@ const facts = [
         text: "When >80% of the public is on a spread, the books are begging you to take it. Fade the public, shadow the sharps.",
         stat: "80%",
         label: "Contrarian"
+    },
+    {
+        icon: <Target className="w-8 h-8 text-[#f7d849]" />,
+        title: "Bankroll Mechanics",
+        text: "Staking more than 5% of your bankroll on a single play increases your risk of ruin mathematically to over 80%. Protect your capital.",
+        stat: "5%",
+        label: "Kelly Calc"
+    },
+    {
+        icon: <TrendingUp className="w-8 h-8 text-accent" />,
+        title: "Variance is Inevitable",
+        text: "Even the best quants in the world face 10-game losing streaks. Emotional control separates the pros from the public.",
+        stat: "EQ",
+        label: "Discipline"
+    },
+    {
+        icon: <Gem className="w-8 h-8 text-[#f7d849]" />,
+        title: "Implied Probabilities",
+        text: "Don't look at odds as payouts. Look at them as probabilities. Odds of 2.00 mean the book thinks it happens 50% of the time. Find the edge.",
+        stat: "EV+",
+        label: "Maths"
+    },
+    {
+        icon: <Trophy className="w-8 h-8 text-accent" />,
+        title: "Specialisation Wins",
+        text: "You can't beat the books across 15 different sports. The real sharps dominate hyper-niche markets where algorithms lack data.",
+        stat: "Niche",
+        label: "Focus"
     }
 ];
 
