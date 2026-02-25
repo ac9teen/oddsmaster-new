@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: ac9teen/oddsmaster-new
+  branch: main
+  base_url: https://oddsmaster.vip
+  auth_endpoint: api/auth
+
+media_folder: "public/images/uploads" # Media files will be stored in the repo under public/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "src/content/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in frontmatter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      
+      # Select widget for Categories
+      - {label: "Category", name: "category", widget: "select", options: ["Strategy", "ATP", "WTA", "Football Picks", "Basketball Picks", "Football", "Basketball", "General", "OddsMaster"], default: "ATP"}
+      
+      - {label: "Featured Image", name: "coverImage", widget: "image"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Author", name: "author", widget: "string", default: "OddsMaster Quant Team"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["Strategy"]}
+      
+      # Rich text editor (Markdown)
+      - {label: "Body", name: "body", widget: "markdown"}

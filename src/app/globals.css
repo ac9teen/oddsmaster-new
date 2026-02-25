@@ -1,0 +1,441 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #000c08;
+  --section-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.08);
+  --muted: #64748b;
+  --input-bg: #f1f5f9;
+  --input-border: #e2e8f0;
+  --accent: #07b57e;
+  --secondary: #f7d849;
+  --shadow-color: #000000;
+  --h1: clamp(2.5rem, 10vw, 6rem);
+  --section-h2: clamp(1.85rem, 5vw, 2.75rem);
+  --card-h3: clamp(1.25rem, 3vw, 1.5rem);
+  --body-p: clamp(0.95rem, 2vw, 1.05rem);
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #ffffff;
+  --section-bg: #030712;
+  --card-bg: #0a0a0a;
+  --card-border: rgba(255, 255, 255, 0.1);
+  --muted: #94a3b8;
+  --input-bg: #0f172a;
+  --input-border: #1e293b;
+  --accent: #07b57e;
+  --secondary: #f7d849;
+  --shadow-color: #ffffff;
+}
+
+* {
+  border-color: var(--card-border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.06em;
+  line-height: 0.85;
+  color: var(--foreground);
+}
+
+h1 {
+  font-size: var(--h1);
+  letter-spacing: -0.08em;
+}
+
+h2 {
+  font-size: var(--section-h2);
+}
+
+h3 {
+  font-size: var(--card-h3);
+}
+
+p {
+  font-size: var(--body-p);
+  line-height: 1.6;
+}
+
+.om-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.om-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+
+.om-card-premium {
+  background-color: var(--card-bg);
+  backdrop-filter: blur(24px);
+  border: 1px solid var(--card-border);
+  border-radius: 2.5rem;
+  padding: 2.25rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  .om-card-premium {
+    padding: 3rem;
+  }
+}
+
+.om-btn-primary {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--accent);
+  color: #ffffff;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  box-shadow: 4px 4px 0px 0px var(--shadow-color);
+}
+
+.om-btn-primary:hover {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+.om-input {
+  width: 100%;
+  background-color: var(--input-bg);
+  border: 2px solid var(--input-border);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  color: var(--foreground);
+  outline: none;
+  transition: all 0.3s;
+}
+
+.om-input:focus {
+  border-color: var(--accent);
+}
+
+/* Calculator & Ranges */
+.field {
+  background-color: var(--input-bg);
+  border: 2px solid var(--input-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+
+.field:focus-within {
+  border-color: var(--accent);
+}
+
+.field-label {
+  display: block;
+  font-weight: 900;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--foreground);
+  margin-bottom: 1rem;
+}
+
+.field-value {
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: -0.05em;
+  color: var(--accent);
+}
+
+.range {
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background: var(--input-border);
+  outline: none;
+  appearance: none;
+}
+
+.range::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 4px solid var(--background);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.range::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+.earnings-result {
+  background-color: var(--accent);
+  color: #ffffff;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -15px rgba(7, 181, 126, 0.4);
+}
+
+.result-amount {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+/* Bar Charts */
+.mini-chart {
+  padding: 2rem 0;
+}
+
+.mini-chart-bars {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .mini-chart-bars {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.mini-bar-track {
+  height: 0.75rem;
+  background-color: var(--input-bg);
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.mini-bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--accent);
+  width: 0;
+  transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-visible .mini-bar-fill {
+  width: var(--target-height);
+}
+
+.mini-bar-value {
+  font-weight: 900;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  color: var(--foreground);
+}
+
+.mini-bar-label {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+/* Expert/Team Tags */
+.experts-header-tag,
+.team-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.25rem;
+  border-radius: 999px;
+  background: rgba(7, 181, 126, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(7, 181, 126, 0.2);
+  margin-bottom: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+}
+
+/* Team Carousel */
+.team-card {
+  aspect-ratio: 4/5;
+  border-radius: 2rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+}
+
+.team-header {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.4) 40%, transparent 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.team-name {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.team-role {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.team-sport-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background: var(--accent);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 10px 20px -5px rgba(7, 181, 126, 0.5);
+}
+
+@keyframes bounce-x {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+}
+
+.animate-bounce-x {
+  animation: bounce-x 1s ease-in-out infinite;
+}
+
+/* Betting Slip Carousel Styles handled by Tailwind & Framer Motion */
+
+/* Legacy Social Icon Styles */
+.social-icons-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.social-icon-legacy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 50%;
+  color: #6b7280;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-icon-legacy::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #07b57e 0%, #058c62 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.social-icon-legacy svg {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.social-icon-legacy:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.22);
+  border-color: #07b57e;
+}
+
+.social-icon-legacy:hover::before {
+  opacity: 1;
+}
+
+.social-icon-legacy:hover svg {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .social-icon-legacy {
+    width: 64px;
+    height: 64px;
+  }
+
+  .social-icon-legacy svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Add any missing styles here if needed */

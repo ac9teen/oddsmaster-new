@@ -1,0 +1,11 @@
+Vercel CLI 48.8.2
+Retrieving project…
+Deploying odds-master/oddsmaster-new
+Uploading [--------------------] (0.0B/18.8KB)
+Uploading [===========---------] (11.1KB/18.8KB)
+Uploading [====================] (18.8KB/18.8KB)
+Inspect: https://vercel.com/odds-master/oddsmaster-new/F7yUuaQzpobDnx1CCYFaKFAjttnT [6s]
+Production: https://oddsmaster-h7q0bnjfy-odds-master.vercel.app [6s]
+https://oddsmaster-h7q0bnjfy-odds-master.vercel.appBuilding
+Building
+Completing
