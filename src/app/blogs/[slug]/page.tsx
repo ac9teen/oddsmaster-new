@@ -98,7 +98,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                             ))}
                         </div>
 
-                        <h1 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter mb-8 leading-none bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/60">
+                        <h1 className="text-4xl md:text-6xl font-black italic uppercase tracking-tighter mb-8 leading-none blog-hero-heading">
                             {post.title}
                         </h1>
 
