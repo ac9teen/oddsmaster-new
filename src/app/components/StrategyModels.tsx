@@ -165,6 +165,11 @@ export function StrategyModels() {
                                             </div>
                                         ))}
                                     </div>
+                                    <div className="mt-6 pt-4">
+                                        <button className="text-xs font-bold text-accent flex items-center gap-2 hover:text-white transition-colors uppercase tracking-wider bg-accent/10 px-4 py-2 rounded-lg border border-accent/20 hover:bg-accent/20 w-full justify-center">
+                                            <Zap className="w-3 h-3" /> Execute Pipeline Schema
+                                        </button>
+                                    </div>
                                 </div>
 
                                 {/* Aesthetic Background Gradient */}
