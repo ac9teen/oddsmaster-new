@@ -10,7 +10,7 @@ export function ExpertiseSection() {
   const [mode, setMode] = useState<'retail' | 'quant'>('quant');
 
   return (
-    <section id="about" className="py-12 md:py-20 bg-background text-foreground relative overflow-hidden transition-colors duration-300">
+    <section id="about" className="pt-12 md:pt-20 pb-4 md:pb-8 bg-background text-foreground relative overflow-hidden transition-colors duration-300">
       {/* Background Texture with Cinematic Drift */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-20 dark:opacity-40 overflow-hidden">
         <Image

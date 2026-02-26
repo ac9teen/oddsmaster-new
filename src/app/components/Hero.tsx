@@ -68,7 +68,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen bg-background text-foreground pt-[80px] md:pt-[120px] lg:pt-[140px] pb-6 md:pb-10 flex flex-col items-center overflow-hidden transition-colors duration-300">
+    <section className="relative min-h-screen bg-background text-foreground pt-[80px] md:pt-[90px] lg:pt-[100px] pb-6 md:pb-10 flex flex-col items-center overflow-hidden transition-colors duration-300">
 
       {/* Background Texture - Both Modes */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-30 dark:opacity-60 overflow-hidden">
@@ -106,7 +106,7 @@ export function Hero() {
       <div className="om-container relative z-10 flex flex-col items-center w-full px-4">
 
         {/* Main Heading */}
-        <div className="text-center mb-8 md:mb-12 max-w-[1100px] w-full mt-12 md:mt-24">
+        <div className="text-center mb-8 md:mb-12 max-w-[1100px] w-full mt-12 md:mt-12">
           <motion.h1
             initial={{ opacity: 0, y: 40, filter: 'blur(10px)' }}
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
