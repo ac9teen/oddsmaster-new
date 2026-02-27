@@ -40,7 +40,7 @@ export function BettingIntelligence() {
     <section className="py-12 md:py-20 bg-background text-foreground relative transition-colors duration-300">
       {/* Background Texture */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-20 dark:opacity-30">
-        <img src="/bg2.png" alt="" className="w-full h-full object-cover mix-blend-overlay" />
+        <img src="/bg2.png" alt="" width={1920} height={1080} className="w-full h-full object-cover mix-blend-overlay" />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
       </div>
 

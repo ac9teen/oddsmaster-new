@@ -33,7 +33,7 @@ export function FAQ() {
     <section id="faq" className="py-12 md:py-20 bg-background text-foreground relative overflow-hidden transition-colors duration-300">
       {/* Background Texture with Warp Drift */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-10 dark:opacity-20 overflow-hidden">
-        <img src="/bg5.png" alt="" className="w-full h-full object-cover mix-blend-overlay animate-warp-drift" />
+        <img src="/bg5.png" alt="" width={1920} height={1080} className="w-full h-full object-cover mix-blend-overlay animate-warp-drift" />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
       </div>
 

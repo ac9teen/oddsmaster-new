@@ -16,6 +16,8 @@ export function HumanAiSynergy() {
                     <img
                         src="/icons/elite_human_selection.svg"
                         alt="Elite Human Selection"
+                        width={32}
+                        height={32}
                         className="w-full h-full object-contain drop-shadow-[0_0_5px_rgba(247,216,73,0.5)]"
                     />
                 </div>
@@ -30,6 +32,8 @@ export function HumanAiSynergy() {
                     <img
                         src="/icons/insight_consolidation.svg"
                         alt="Insight Consolidation"
+                        width={32}
+                        height={32}
                         className="w-full h-full object-contain drop-shadow-[0_0_5px_rgba(247,216,73,0.5)]"
                     />
                 </div>
@@ -44,6 +48,8 @@ export function HumanAiSynergy() {
                     <img
                         src="/icons/machine_filter.svg"
                         alt="The Machine Filter"
+                        width={32}
+                        height={32}
                         className="w-full h-full object-contain drop-shadow-[0_0_5px_rgba(247,216,73,0.5)]"
                     />
                 </div>
@@ -56,7 +62,7 @@ export function HumanAiSynergy() {
         <section className="py-12 md:py-20 bg-background text-foreground relative overflow-hidden">
             {/* Background Texture */}
             <div className="absolute inset-0 z-0 pointer-events-none opacity-20 dark:opacity-30">
-                <img src="/bg3.png" alt="" className="w-full h-full object-cover mix-blend-overlay" />
+                <img src="/bg3.png" alt="" width={1920} height={1080} className="w-full h-full object-cover mix-blend-overlay" />
                 <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
             </div>
 

@@ -20,11 +20,13 @@ export function Footer() {
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img
                     src="/Logo.svg"
+                    width={40}
+                    height={40}
                     alt="OddsMaster Logo"
                     className="w-full h-full object-contain swirl-logo brightness-0 invert dark:brightness-0 dark:invert"
                   />
                 </div>
-                <img src="/oddmasterlogowhite_text.svg" alt="ODDSMASTER" className="h-9 w-auto object-contain" />
+                <img src="/oddmasterlogowhite_text.svg" alt="ODDSMASTER" width={200} height={36} className="h-9 w-auto object-contain" />
               </div>
             </Link>
             <p className="text-muted font-medium mb-12 leading-relaxed">

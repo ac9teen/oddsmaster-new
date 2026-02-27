@@ -75,7 +75,7 @@ export function BlogSearch({ posts }: { posts: Post[] }) {
                                         <div className="flex items-start gap-4 p-4 hover:bg-white/5 rounded-2xl transition-colors cursor-pointer group">
                                             {post.coverImage && (
                                                 <div className="relative w-20 h-20 rounded-xl overflow-hidden shrink-0">
-                                                    <img src={post.coverImage} alt={post.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                                                    <img src={post.coverImage} alt={post.title} width={80} height={80} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                                                 </div>
                                             )}
                                             <div>
