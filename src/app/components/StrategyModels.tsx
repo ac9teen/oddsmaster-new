@@ -250,23 +250,20 @@ export function StrategyModels() {
                             onClick={(e) => e.stopPropagation()}
                             className="w-full max-w-2xl bg-card border border-white/10 rounded-2xl shadow-2xl relative overflow-hidden"
                         >
-                            {/* Terminal-like header */}
-                            <div className="bg-white/5 px-6 py-3 border-b border-white/10 flex justify-between items-center">
-                                <div className="flex items-center gap-3">
-                                    <div className="flex gap-1.5">
-                                        <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
-                                        <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-                                        <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
-                                    </div>
-                                    <span className="text-[10px] uppercase tracking-widest font-mono text-muted/70">
-                                        Pipeline_{selectedModel.id}.sh
+                            {/* Organic Header */}
+                            <div className="px-6 md:px-8 py-5 flex justify-between items-center border-b border-white/5">
+                                <div className="flex items-center gap-2">
+                                    <Activity className="w-4 h-4 text-accent" />
+                                    <span className="text-xs uppercase tracking-[0.2em] font-black text-muted/90">
+                                        Model Architecture Extract
                                     </span>
                                 </div>
                                 <button
                                     onClick={() => setSelectedModel(null)}
-                                    className="p-1 hover:bg-white/10 rounded-md transition-colors text-muted hover:text-white"
+                                    className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors text-muted hover:text-white"
+                                    aria-label="Close modal"
                                 >
-                                    <X className="w-5 h-5" />
+                                    <X className="w-4 h-4" />
                                 </button>
                             </div>
 
