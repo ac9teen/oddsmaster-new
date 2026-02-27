@@ -42,10 +42,6 @@ export function Header() {
                         Blogs
                         <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-accent transition-all duration-300 group-hover/link:w-full"></span>
                     </Link>
-                    <Link href="/tools" className="text-foreground/60 hover:text-accent transition-all text-[11px] font-black uppercase tracking-[0.2em] whitespace-nowrap relative group/link">
-                        Tools
-                        <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-accent transition-all duration-300 group-hover/link:w-full"></span>
-                    </Link>
                     <Link href="/#models" className="text-foreground/60 hover:text-accent transition-all text-[11px] font-black uppercase tracking-[0.2em] whitespace-nowrap relative group/link">
                         AI Models
                         <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-accent transition-all duration-300 group-hover/link:w-full"></span>
@@ -92,9 +88,6 @@ export function Header() {
                         </Link>
                         <Link href="/blogs" className="text-foreground text-lg font-black uppercase tracking-wider border-b border-card-border pb-3 hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>
                             Blogs
-                        </Link>
-                        <Link href="/tools" className="text-foreground text-lg font-black uppercase tracking-wider border-b border-card-border pb-3 hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>
-                            Tools
                         </Link>
                         <Link href="/#models" className="text-foreground text-lg font-black uppercase tracking-wider border-b border-card-border pb-3 hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>
                             AI Models
