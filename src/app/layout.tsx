@@ -49,9 +49,7 @@ export const metadata: Metadata = {
     },
   ],
   creator: "OddsMaster",
-  alternates: {
-    canonical: 'https://oddsmaster.vip',
-  },
+
   robots: {
     index: true,
     follow: true,

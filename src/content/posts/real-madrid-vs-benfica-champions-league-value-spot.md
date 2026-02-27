@@ -58,11 +58,11 @@ At **1.60 odds**, implied probability equals:
 
 **1 / 1.60 = 62.5%**
 
-Our blended model, weighting home dominance, shot differential, and squad depth, projects Madrid closer to **69–71%**.
+Our blended [model](/#models), weighting home dominance, shot differential, and squad depth, projects Madrid closer to **69–71%**.
 
 Using **70%** for calculation:
 
-EV = (0.70 × 1.60) − 1  
+[EV](/#about) = (0.70 × 1.60) − 1  
 = **+12% projected ROI**
 
 Even adjusting downward to **68%**, expected return remains positive.

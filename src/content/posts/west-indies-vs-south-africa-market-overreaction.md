@@ -63,7 +63,7 @@ West Indies at **2.65 average**:
 
 That creates an overround of roughly **105–106%**, which after normalization places South Africa near **64–65% true market expectation**.
 
-Our blended projection model, weighting:
+Our blended projection [model](/#models), weighting:
 
 - Tournament form
 - Batting strike differential
@@ -79,7 +79,7 @@ It is on the dog.
 
 Expected value calculation on West Indies at **2.65**:
 
-EV = (0.39 × 2.65) − 1  
+[EV](/#about) = (0.39 × 2.65) − 1  
 = **+3.35% projected ROI** (assuming conservative 39% win probability)
 
 This is not a massive edge. But in T20, where variance is high, underdog mispricing compounds.

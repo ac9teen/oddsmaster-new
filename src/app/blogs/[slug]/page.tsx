@@ -25,6 +25,9 @@ export async function generateMetadata(
     return {
         title: `${post.title} | OddsMaster Blog`,
         description: post.excerpt,
+        alternates: {
+            canonical: `https://oddsmaster.vip/blogs/${post.slug}`,
+        },
         openGraph: {
             images: [post.coverImage || '/newsletter/bg1.png'],
         },

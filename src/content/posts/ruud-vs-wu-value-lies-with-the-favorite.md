@@ -44,7 +44,7 @@ At **1.44 odds**, implied probability equals:
 
 If true probability is **77%**, expected value becomes:
 
-EV = (0.77 × 1.44) − 1  
+[EV](/#about) = (0.77 × 1.44) − 1  
 = **+10.9% projected ROI**
 
 In efficient ATP markets, sustained edges above **5%** are rare. This qualifies.
@@ -64,7 +64,7 @@ Straight-sets projection sits near **61–63%**, while market pricing implies ro
 - **Selection:** Casper Ruud  
 - **Odds:** 1.44  
 - **Implied Market Probability:** 69.4%  
-- **Our Model Probability:** 77%  
+- **Our [Model](/#models) Probability:** 77%  
 - **Edge:** +7.6%  
 
 Secondary Lean:
